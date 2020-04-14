@@ -1,0 +1,25 @@
+recinf: Print info about rec files.
+recsel: Select records.
+recins: Insert records.
+recdel: Delete records.
+recset: Manage fields.
+recfix: Fix broken rec files, and diagnostics.
+recfmt: Format records using templates.
+csv2rec: Convert csv data into rec data.
+rec2csv: Convert rec data into csv data.
+mdb2rec: Convert mdb files into rec files. 
+
+recsel [option]... \
+            [-n indexes | -e record_expr | -q str | -m num] \
+            [-c | (-p|-P|-R) field_expr] \
+            [file]...
+
+recins [option]... [-t type] \
+            [-n indexes | -e record_expr | -q str | -m num] \
+            [( -f str -v str]|[-r recdata )]... \
+            [file]
+
+recdel [OPTIONS]... [-t type] \
+            [-n indexes | -e record_expr | -q str | -m num] \
+            [file]
+
